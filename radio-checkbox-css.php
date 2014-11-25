@@ -8,8 +8,8 @@
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 	<style>
 		/*hide checkbox and radio buttons*/
-		input[type=checkbox]:not(old), 
-		input[type=radio]:not(old) {
+		input[type=checkbox], 
+		input[type=radio] {
 			width: 2em;
 			margin: 0;
 			padding: 0;
@@ -18,16 +18,16 @@
 		}
 
 		/*normalize the spacing*/
-		input[type=checkbox]:not(old) + label,
-		input[type=radio]:not(old) + label {
+		input[type=checkbox] + label,
+		input[type=radio] + label {
 			display: inline-block;
 			margin-left: -2em;
 			line-height: 1.5em;
 		}
 
 		/*unchecked css*/
-		input[type=checkbox]:not(old) + label > span,
-		input[type=radio]:not(old) + label > span {
+		input[type=checkbox] + label > span,
+		input[type=radio] + label > span {
 			display: inline-block;
 			background-color: #D5E1ED;
 			width: 35px;
@@ -36,7 +36,7 @@
 		}
 
 		/*selected checkbox css*/
-		input[type=checkbox]:not(old):checked + label > span > span {
+		input[type=checkbox]:checked + label > span > span {
 			/*content: 'x'*/;
 			display: block;
 			width: 35px;
@@ -48,7 +48,7 @@
 		}
 
 		/*selected radio css*/
-		input[type=radio]:not(old):checked + label > span > span {
+		input[type=radio]:checked + label > span > span {
 			display: block;
 			width: 35px;
 			height: 35px;
